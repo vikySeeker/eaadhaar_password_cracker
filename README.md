@@ -1,7 +1,7 @@
 # eaadhaar_password-list_generator
 This Program will help you in Creating a Password list for Cracking password hashes of Aadhar PDF 
 
-Prerequisites:
+## Prerequisites:
   GCC compiler for linux OS or a c complier suitable for your OS
 
 steps to generate password list:
@@ -14,5 +14,5 @@ steps to generate password list:
 5.If you are not using linux compile the .c file with a c compiler suitable for your OS.
 
 
-NOTE:
+## NOTE:
   the .out file can only be supported by Linux Systems.
