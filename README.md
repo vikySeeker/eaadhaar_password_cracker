@@ -4,7 +4,7 @@ This Program will help you in Creating a Password list for Cracking password has
 ## Prerequisites:
   GCC compiler for linux OS or a c complier suitable for your OS
 
-steps to generate password list:
+## steps to generate password list:
 1.Clone the repo
 2.cd ./eaadhar_password-list_generator/
 3.If you are using linux type the following commands:
