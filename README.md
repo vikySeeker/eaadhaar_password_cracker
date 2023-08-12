@@ -11,7 +11,7 @@ This Program will help you in Creating a Password list for Cracking password has
 1.Clone the repo<br>
 2.cd ./eaadhar_password-list_generator/<br>
 ### 3.If you are using linux type the following commands:<br>
-  ./aadharpassgen.out<br>
+  ./aadharpassgen.out <start year> <end year> <br>
 
 4.else you can compile .c file if you wish.<br>
 5.If you are not using linux compile the .c file with a c compiler suitable for your OS.<br>
