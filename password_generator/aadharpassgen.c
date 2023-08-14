@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main(int argc, char *argv[]){
-  printf("%d", argc);
 char s[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 int syear,eyear;
 if(argc==3){
@@ -34,4 +33,5 @@ for(int i=0;i<26;i++){
 }
 printf("Writed password in file 'aadharpassword.txt' successfully!\n");
 fclose(file);
+return 0;
 }
