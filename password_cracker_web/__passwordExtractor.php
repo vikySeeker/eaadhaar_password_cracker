@@ -5,7 +5,7 @@ function extractPassword(){
     $endyear = $_SESSION['ey'];
     $filename = $_SESSION['filename'];
     //need to be implemented
-    $command = $_SERVER['DOCUMENT_ROOT']."/password_cracker_executables/cracker.sh ".$startyear." ".$endyear." ".$filename;
+    $command = $_SERVER['DOCUMENT_ROOT']."/__password_cracker_executables/cracker.sh ".$startyear." ".$endyear." ".$filename;
     $result = null;
     $result_code = null;
     exec($command,$result,$result_code);

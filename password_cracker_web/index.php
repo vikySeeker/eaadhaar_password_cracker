@@ -1,12 +1,17 @@
 <?php
 
 if(isset($_POST['submit'])) {
-	session_start();
-	$_SESSION['sy'] = $_POST['startyear'];
-	$_SESSION['ey'] = $_POST['endyear'];
-	include_once($_SERVER['DOCUMENT_ROOT']."/fileHandler.php");
-	$result = savefile();
-	echo $result;
+	include_once($_SERVER['DOCUMENT_ROOT']."/__validateInput.php");
+	if(!validateInput(array($_POST['startyear'],$_POST['endyear']))){
+		echo "You can only input numbers ranging from ".strval($MIN_YEAR)." to ".strval($MAX_YEAR);
+	}else{
+		session_start();
+		$_SESSION['sy'] = $_POST['startyear'];
+		$_SESSION['ey'] = $_POST['endyear'];
+		include_once($_SERVER['DOCUMENT_ROOT']."/__fileHandler.php");
+		$result = savefile();
+		echo $result;
+	}
 }else{
 	$HOME_PAGE = <<<HOMEPAGE
 	<!DOCTYPE html>

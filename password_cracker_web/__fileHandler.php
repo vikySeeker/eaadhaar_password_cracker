@@ -2,7 +2,7 @@
 
 function savefile()
 {
-	$filepath = "./userfiles/";
+	$filepath = "./__userfiles/";
 	$file_name = $_FILES['pdffile']['name'];
 	$_SESSION['filename'] = $file_name;
 	$temppath = $_FILES['pdffile']['tmp_name'];
@@ -14,7 +14,7 @@ function savefile()
 	if(!empty($file_name)) {
 		if($fileType === "pdf") {
 			if(move_uploaded_file($temppath, $originalPath)) {
-				include_once($_SERVER['DOCUMENT_ROOT']."/passwordExtractor.php");
+				include_once($_SERVER['DOCUMENT_ROOT']."/__passwordExtractor.php");
 				$result = extractPassword();
 				if($result[0][1]==="Could not find password"){
 					return "Sorry, could not find password!!";
